@@ -21,19 +21,19 @@
       </v-layout>
       <v-layout justify-center row wrap>
         <v-flex xs10 md3>
-          <v-btn color="red darken-1" @click = "vote(1)">Väldigt oengagerad</v-btn>
+          <v-btn :disabled= buttonDisabled color="red darken-1" @click = "vote(1)">Väldigt oengagerad</v-btn>
         </v-flex>
         <v-flex xs10 md2>
-          <v-btn color="red lighten-3" @click = "vote(2)">Oengagerad</v-btn>
+          <v-btn :disabled= buttonDisabled color="red lighten-3" @click = "vote(2)">Oengagerad</v-btn>
         </v-flex>
         <v-flex xs10 md2>
-          <v-btn color="yellow" @click = "vote(3)">Neutral</v-btn>
+          <v-btn :disabled= buttonDisabled color="yellow" @click = "vote(3)">Neutral</v-btn>
         </v-flex>
         <v-flex xs10 md2>
-          <v-btn color="green lighten-3" @click = "vote(4)">Engagerad</v-btn>
+          <v-btn :disabled= buttonDisabled color="green lighten-3" @click = "vote(4)">Engagerad</v-btn>
         </v-flex>
         <v-flex xs10 md2>
-           <v-btn color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
+           <v-btn :disabled= buttonDisabled color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
         </v-flex>
       </v-layout>
     </v-container>
@@ -50,7 +50,8 @@ export default {
       video: '',
       videoId: '',
       noMoreVideo: '',
-      alert: false
+      alert: false,
+      buttonDisabled: false
     }
   },
   mounted () {
@@ -79,6 +80,8 @@ export default {
     },
 
     async vote (vote) {
+      // Disable buttons for 8 sec after vote.
+      this.disableButton()
       try {
         const response = await RequestService.vote({
           UserId: this.user,
@@ -92,6 +95,14 @@ export default {
       } catch (error) {
         this.error = error.response.data.error
       }
+    },
+    disableButton () {
+      this.buttonDisabled = true
+      setTimeout(this.enableButton, 6500)
+    },
+    enableButton () {
+      console.log('test')
+      this.buttonDisabled = false
     }
   }
 }
