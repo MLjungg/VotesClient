@@ -17,7 +17,7 @@
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
         <v-flex xs10 align-self-center align-content-center>
-          <iframe id="myiframe" :src= video width="850" height="750" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
+          <iframe id="myiframe" :src= video width="780" height="700" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
         <v-flex xs10 md3>
