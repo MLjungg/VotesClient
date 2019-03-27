@@ -17,7 +17,7 @@
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
         <v-flex xs10 align-self-center align-content-center>
-          <iframe :src= video width="700" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>        </v-flex>
+          <iframe id="myiframe" :src= video width="750" height="600" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
         <v-flex xs10 md3>
@@ -57,6 +57,7 @@ export default {
   mounted () {
     this.getVideo()
   },
+
   methods: {
     redirect (route) {
       if (route === 'login') {
@@ -70,6 +71,7 @@ export default {
       try {
         const response = await RequestService.getVideo({userId: this.user})
         this.video = response.data.path
+        console.log(this.video)
         this.videoId = response.data.id
       } catch (error) {
         // No video to vote on
@@ -98,10 +100,9 @@ export default {
     },
     disableButton () {
       this.buttonDisabled = true
-      setTimeout(this.enableButton, 6500)
+      setTimeout(this.enableButton, 7500)
     },
     enableButton () {
-      console.log('test')
       this.buttonDisabled = false
     }
   }
@@ -109,5 +110,9 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
+.preview-header-wrapper >{
+    display: none;
+}
+
 </style>
