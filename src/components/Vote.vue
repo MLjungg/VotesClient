@@ -1,7 +1,7 @@
 <!-- TODO: Fixa storlek på bilden -->
 <template>
   <v-app style="background-color: rgb(240, 240, 240)">
-    <v-toolbar height=70 dark color="blue-grey darken-1">
+    <v-toolbar height=75 dark color="blue-grey darken-1">
       <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn flat color="white" @click = "redirect('login')" >Sign Out</v-btn>
@@ -17,7 +17,7 @@
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
         <v-flex align-self-center align-content-center>
-          <iframe id="myiframe" :src= video width="780" height="700" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
+          <iframe id="myiframe" :src= video width="700" height="560" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
         <v-flex xs10 md3 sm3>

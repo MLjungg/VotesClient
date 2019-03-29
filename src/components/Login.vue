@@ -1,6 +1,6 @@
 <template>
   <v-app style="background-color: rgb(240, 240, 240)">
-    <v-toolbar fixed height=90 dark color="blue-grey darken-1">
+    <v-toolbar fixed height=75 dark color="blue-grey darken-1">
     <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn flat @click = "redirect('register')" color="white">Sign up</v-btn>
