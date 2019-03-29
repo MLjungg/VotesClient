@@ -73,6 +73,6 @@ export default {
 .err{
   color:red
 }
-body{height:100vh;}
+body{padding-bottom: 2000px;}
 
 </style>
