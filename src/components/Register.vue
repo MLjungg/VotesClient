@@ -1,6 +1,6 @@
 <template>
   <v-app style="background-color: rgb(240, 240, 240)">
-    <v-toolbar dark color="blue-grey darken-1">
+    <v-toolbar height=90 dark color="blue-grey darken-1">
     <v-spacer></v-spacer>
       <v-toolbar-items>
         <v-btn flat @click = "redirect('login')" color="white">login</v-btn>
@@ -9,7 +9,7 @@
     <v-content>
       <v-container fluid fill-height>
         <v-layout align-center justify-center>
-          <v-flex xs12 sm8 md5>
+          <v-flex xs12 sm8 md8 lg4 xl4>
             <v-card class="elevation-14">
               <v-toolbar dark color="blue-grey darken-1">
                 <v-toolbar-title>Registration form</v-toolbar-title>

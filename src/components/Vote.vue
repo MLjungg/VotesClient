@@ -1,7 +1,7 @@
 <!-- TODO: Fixa storlek på bilden -->
 <template>
   <v-app style="background-color: rgb(240, 240, 240)">
-    <v-toolbar dark color="blue-grey darken-1">
+    <v-toolbar height=90 dark color="blue-grey darken-1">
       <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn flat color="white" @click = "redirect('login')" >Sign Out</v-btn>
