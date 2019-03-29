@@ -73,6 +73,9 @@ export default {
 .err{
   color:red
 }
-body{padding-bottom: 2000px;}
+html, body {
+    margin: 0;
+    height: 100%;
+}
 
 </style>

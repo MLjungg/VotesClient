@@ -33,7 +33,6 @@
         </v-layout>
       </v-container>
     </v-content>
-    <span>Test</span>
   </v-app>
 </template>
 
