@@ -7,9 +7,9 @@
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
-      <v-container fluid>
+      <v-container fluid fill-height>
         <v-layout align-center justify-center>
-          <v-flex xs12 sm8 md4 lg12 xl12>
+          <v-flex xs12 sm8 md4 lg4 xl10>
             <v-card class="elevation-14">
               <v-toolbar dark color="blue-grey darken-1">
                 <v-toolbar-title>Login</v-toolbar-title>
