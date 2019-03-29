@@ -1,7 +1,7 @@
 <!-- TODO: Fixa storlek på bilden -->
 <template>
   <v-app style="background-color: rgb(240, 240, 240)">
-    <v-toolbar height=90 dark color="blue-grey darken-1">
+    <v-toolbar height=70 dark color="blue-grey darken-1">
       <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn flat color="white" @click = "redirect('login')" >Sign Out</v-btn>
@@ -16,11 +16,11 @@
     >Thanks for voting, there is no more video to vote on!</v-alert>
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
-        <v-flex xs10 align-self-center align-content-center>
+        <v-flex align-self-center align-content-center>
           <iframe id="myiframe" :src= video width="780" height="700" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
-        <v-flex xs10 md3>
+        <v-flex xs10 md2>
           <v-btn :disabled= buttonDisabled color="red darken-1" @click = "vote(1)">Väldigt oengagerad</v-btn>
         </v-flex>
         <v-flex xs10 md2>
@@ -34,6 +34,9 @@
         </v-flex>
         <v-flex xs10 md2>
            <v-btn :disabled= buttonDisabled color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
+        </v-flex>
+        <v-flex xs10 md4>
+           <v-btn :disabled= buttonDisabled @click = "getVideo()">Hoppa över</v-btn>
         </v-flex>
       </v-layout>
     </v-container>
