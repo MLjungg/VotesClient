@@ -7,7 +7,7 @@
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
-      <v-container fill-height>
+      <v-container fluid fill-height>
         <v-layout align-center justify-center>
           <v-flex xs12 sm8 md5 lg4 xl4>
             <v-card class="elevation-14">
@@ -73,5 +73,6 @@ export default {
 .err{
   color:red
 }
+body{overflow:hidden;}
 
 </style>
