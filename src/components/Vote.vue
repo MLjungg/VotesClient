@@ -17,6 +17,11 @@
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
         <v-flex align-self-center align-content-center>
+          <h2>Hur engagerad är personen i filmsekvensen? Kolla på klippet och bedöm!</h2>
+          </v-flex>
+      </v-layout>
+      <v-layout align-content-center justify-center>
+        <v-flex align-self-center align-content-center>
           <iframe id="myiframe" :src= video width="700" height="560" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
