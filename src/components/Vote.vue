@@ -25,21 +25,26 @@
           <iframe :src = "video" width="700" height="560" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
+        <v-flex xs12 lg12 md12 sm12></v-flex>
+        <v-flex xs12 lg12 md12 sm12></v-flex>
         <v-flex xs10 lg3 md10 sm10>
-          <v-btn large=true :disabled= buttonDisabled color="red darken-1" @click = "vote(1)">Väldigt oengagerad</v-btn>
+          <v-btn block=true large=true :disabled= buttonDisabled color="red darken-1" @click = "vote(1)">Väldigt oengagerad</v-btn>
         </v-flex>
         <v-flex xs10 lg2 md10 sm10>
-          <v-btn large=true :disabled= buttonDisabled color="red lighten-3" @click = "vote(2)">Oengagerad</v-btn>
+          <v-btn block=true large=true :disabled= buttonDisabled color="red lighten-3" @click = "vote(2)">Oengagerad</v-btn>
         </v-flex>
         <v-flex xs10 lg2 md10 sm10>
-          <v-btn large=true :disabled= buttonDisabled color="yellow" @click = "vote(3)">Neutral</v-btn>
+          <v-btn block=true large=true :disabled= buttonDisabled color="yellow" @click = "vote(3)">Neutral</v-btn>
         </v-flex>
         <v-flex xs10 lg2 md10 sm10>
-          <v-btn large=true :disabled= buttonDisabled color="green lighten-3" @click = "vote(4)">Engagerad</v-btn>
+          <v-btn block=true large=true :disabled= buttonDisabled color="green lighten-3" @click = "vote(4)">Engagerad</v-btn>
         </v-flex>
         <v-flex xs10 lg3 md10 sm10>
-           <v-btn large=true :disabled= buttonDisabled color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
+           <v-btn block=true large=true :disabled= buttonDisabled color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
         </v-flex>
+        <v-flex xs12 lg12 md12 sm12></v-flex>
+        <v-flex xs12 lg12 md12 sm12></v-flex>
+        <v-flex xs12 lg12 md12 sm12></v-flex>
         <v-flex xs10 lg2 md10 sm10>
            <v-btn :disabled= buttonDisabled @click = "getVideo()">Hoppa över</v-btn>
         </v-flex>
