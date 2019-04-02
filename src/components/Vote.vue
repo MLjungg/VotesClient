@@ -17,7 +17,7 @@
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
         <v-flex align-self-center align-content-center>
-          <h2>Hur engagerad är personen i filmsekvensen? Kolla på klippet och bedöm!</h2>
+          <h2>Hur engagerad upplever du personen i samtalet? Kolla på klippet och bedöm!</h2>
         </v-flex>
       </v-layout>
       <v-layout align-content-center justify-center>
@@ -44,7 +44,7 @@
         </v-flex>
         <v-flex xs12 lg12 md12 sm12></v-flex>
         <v-flex xs10 lg2 md10 sm10>
-           <v-btn :disabled= buttonDisabled @click = "getVideo()">Hoppa över</v-btn>
+           <v-btn :disabled= buttonDisabled @click = "skip()">Hoppa över</v-btn>
         </v-flex>
       </v-layout>
     </v-container>
@@ -108,6 +108,10 @@ export default {
       } catch (error) {
         this.error = error.response.data.error
       }
+    },
+    skip () {
+      this.getVideo()
+      this.disableButton()
     },
     disableButton () {
       this.buttonDisabled = true
