@@ -22,7 +22,7 @@
       </v-layout>
       <v-layout align-content-center justify-center>
         <v-flex align-self-center align-content-center>
-          <iframe id="myiframe" :src= video width="700" height="560" frameborder="0" style="" allowfullscreen webkitallowfullscreen msallowfullscreen display:none></iframe>        </v-flex>
+          <iframe :src = "video" width="580" height="400" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
         <v-flex xs10 md3 sm3>
@@ -58,7 +58,6 @@ export default {
       video: '',
       videoId: '',
       noMoreVideo: '',
-      alert: false,
       buttonDisabled: false
     }
   },
@@ -87,6 +86,7 @@ export default {
         this.video = ''
         this.videoId = ''
       }
+      console.log(this.video)
     },
 
     async vote (vote) {
