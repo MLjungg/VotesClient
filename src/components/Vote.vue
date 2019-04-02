@@ -22,7 +22,7 @@
       </v-layout>
       <v-layout align-content-center justify-center>
         <v-flex align-self-center align-content-center>
-          <iframe :src = "video" width="580" height="400" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>        </v-flex>
+          <iframe :src = "video" width="700" height="560" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>        </v-flex>
       </v-layout>
       <v-layout justify-center row wrap>
         <v-flex xs10 lg3 md10 sm10>
@@ -37,7 +37,7 @@
         <v-flex xs10 lg2 md10 sm10>
           <v-btn :disabled= buttonDisabled color="green lighten-3" @click = "vote(4)">Engagerad</v-btn>
         </v-flex>
-        <v-flex xs10 lg2 md10 sm10>
+        <v-flex xs10 lg3 md10 sm10>
            <v-btn :disabled= buttonDisabled color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
         </v-flex>
         <v-flex xs10 lg2 md10 sm10>
