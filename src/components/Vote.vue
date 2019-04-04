@@ -17,6 +17,7 @@
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
         <v-flex align-self-center align-content-center>
+          <span>Personen i klippet deltar i ett samtal med Furhat, en social robot, och en annan samtalsdeltagare. </span>
           <h2>Hur engagerad upplever du personen i samtalet? Kolla på klippet och bedöm!</h2>
         </v-flex>
       </v-layout>
@@ -28,19 +29,19 @@
         <v-flex xs12 lg12 md12 sm12></v-flex>
         <v-flex xs12 lg12 md12 sm12></v-flex>
         <v-flex xs10 lg3 md10 sm10>
-          <v-btn block=true round=true large=true :disabled= buttonDisabled color="red darken-1" @click = "vote(1)">Väldigt oengagerad</v-btn>
+          <v-btn block round large :disabled= buttonDisabled color="red darken-1" @click = "vote(1)">Väldigt oengagerad</v-btn>
         </v-flex>
         <v-flex xs10 lg2 md10 sm10>
-          <v-btn block=true round=true large=true :disabled= buttonDisabled color="red lighten-3" @click = "vote(2)">Oengagerad</v-btn>
+          <v-btn block round large :disabled= buttonDisabled color="red lighten-3" @click = "vote(2)">Oengagerad</v-btn>
         </v-flex>
         <v-flex xs10 lg2 md10 sm10>
-          <v-btn block=true round=true large=true :disabled= buttonDisabled color="yellow" @click = "vote(3)">Neutral</v-btn>
+          <v-btn block round large :disabled= buttonDisabled color="yellow" @click = "vote(3)">Neutral</v-btn>
         </v-flex>
         <v-flex xs10 lg2 md10 sm10>
-          <v-btn block=true round=true large=true :disabled= buttonDisabled color="green lighten-3" @click = "vote(4)">Engagerad</v-btn>
+          <v-btn block round large :disabled= buttonDisabled color="green lighten-3" @click = "vote(4)">Engagerad</v-btn>
         </v-flex>
         <v-flex xs10 lg3 md10 sm10>
-           <v-btn block=true round=true large=true :disabled= buttonDisabled color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
+           <v-btn block round large :disabled= buttonDisabled color="green darken-1" @click = "vote(5)">Väldigt engagerad</v-btn>
         </v-flex>
         <v-flex xs12 lg12 md12 sm12></v-flex>
         <v-flex xs10 lg2 md10 sm10>
@@ -81,7 +82,6 @@ export default {
       try {
         const response = await RequestService.getVideo({userId: this.user})
         this.video = response.data.path
-        console.log(this.video)
         this.videoId = response.data.id
       } catch (error) {
         // No video to vote on
