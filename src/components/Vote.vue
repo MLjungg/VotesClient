@@ -17,7 +17,7 @@
     <v-container grid-list-md>
       <v-layout align-content-center justify-center>
         <v-flex align-self-center align-content-center>
-          <h2>Hur engagerad upplever du personen i samtalet? Kolla på klippet och bedöm!</h2>
+          <h2>Hur engagerad/uttråkad upplever du personen i samtalet? Kolla på klippet och bedöm!</h2>
             <span>Personen i klippet deltar i ett samtal med Furhat, en social robot som spelat in samtalet, och en annan samtalsdeltagare. </span>
         </v-flex>
       </v-layout>
