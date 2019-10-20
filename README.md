@@ -1,6 +1,6 @@
 # client
 
-> A Vue.js project
+> A Vue.js project to annotate video sequencies
 
 ## Build Setup
 
@@ -19,3 +19,7 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+### Final version
+![](https://github.com/MLjungg/VotesClient/blob/master/LayOutPicture.png)
